@@ -1,8 +1,8 @@
 import "./SellerDashboard.css"
-import exitSvg from "./assets/exit.svg"
-import thumb from "./assets/chips.png"
-import uploadSvg from "./assets/upload.svg"
-import saveSvg from "./assets/save.svg"
+import exitSvg from "../assets/exit.svg"
+import thumb from "../assets/chips.png"
+import uploadSvg from "../assets/upload.svg"
+import saveSvg from "../assets/save.svg"
 import { use, useState } from "react"
 
 function SdbHeader(){

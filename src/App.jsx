@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import SellerDashboard  from './SellerDashboard.jsx'
+import SellerDashboard  from './components/SellerDashboard.jsx'
 
 
 function App(){
