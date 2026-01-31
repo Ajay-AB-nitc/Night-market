@@ -4,9 +4,14 @@ import thumb from "../assets/chips.png"
 import uploadSvg from "../assets/upload.svg"
 import saveSvg from "../assets/save.svg"
 import { use, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 function SdbHeader(){
     const email = "rahul.kumar@college.edu"
+    const navigate = useNavigate();
+    const handleclick = () => {
+        navigate("/");
+    }
     return(
         <div className="sdb-header"> 
             <div className="sdb-content">
@@ -14,9 +19,10 @@ function SdbHeader(){
                 <p className="sdb-mail">{email}</p> 
             </div>
             
-            <a className="sdb-exit" href="#">
+
+            <div className="sdb-exit" onClick={handleclick}>
                 <img src={exitSvg} alt="exit" />
-            </a>
+            </div>
         </div>
     )
 }

@@ -6,8 +6,8 @@ import SellerDetails from "./components/SellerDetails.jsx";
 function App(){
   return(
     <Routes>
-      {/* <Route path="/" element={<SellerDashboard/>}/> sdb is temperorily set as the main page */}
-      <Route path="/" element={<SellerDetails/>}/>
+      <Route path="/sellerDashboard" element={<SellerDashboard/>}/> 
+      <Route path="/" element={<SellerDetails/>}/>A
     </Routes>
   );
 }

@@ -5,11 +5,14 @@ import thumb from "../assets/chips.png"
 import clockSvg from "../assets/clock.svg"
 import locationSvg from "../assets/location.svg";
 import whatsappSvg from "../assets/whatsapp.svg";
+import { useNavigate } from "react-router-dom";
 
 // Header of the Seller Details page
 function SdHeader() {
+    const navigate = useNavigate();
     const handleclick=()=>{
-
+        
+        navigate("/sellerDashboard");
     };
     return(
         <div className="sd-header">
